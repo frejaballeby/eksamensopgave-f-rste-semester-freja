@@ -77,3 +77,29 @@ nav {
      font-size: 16px;
      margin-bottom: 20px;
 }
+
+
+/* Produktsektion */
+
+#product {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 100px 80px;
+}
+
+#product img {
+    width: 500px;
+}
+
+.product-info {
+    width: 420px;
+}
+
+/* Overskrift i produktsektionen */
+
+.product-info h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
