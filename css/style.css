@@ -40,6 +40,16 @@ nav {
 #hero {
     padding: 100px 60px;
     min-height: 900px;
+
+/* Baggrundsbillede i hero-sektionen */
+    background-image: url("../img/hero-image.jpg");
+/* Baggrundsbilledet fylder hele hero-sektionen */
+    background-size: cover;
+
+ display: flex;
+flex-direction: column;
+justify-content: flex-start;
 }
+
 
 
