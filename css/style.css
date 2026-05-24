@@ -56,5 +56,14 @@ nav {
     justify-content: flex-start;
 }
 
+/* Størrelse på hero-overskriften */
+#hero h2 {
+    font-size: 64px;
+    margin: 0;
+    line-height: 1.2;
+}
 
-
+/* Størrelse på hero-tekst */
+#hero p {
+    font-size: 20px;
+}
