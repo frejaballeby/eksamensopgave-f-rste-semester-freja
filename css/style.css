@@ -28,3 +28,18 @@ nav {
 .nav-links a {
     margin-left: 35px;
 }
+
+
+/* Luft omkring indholdet i hero-sektionen */
+#hero {
+    padding: 100px 60px;
+}
+
+
+/* Hero-sektionens højde */
+#hero {
+    padding: 100px 60px;
+    min-height: 900px;
+}
+
+
