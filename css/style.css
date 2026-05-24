@@ -12,10 +12,14 @@ body {
     font-family: Arial, sans-serif;
 }
 
+/* Header */
+
 header {
     width: 100%;
     padding: 25px 60px;
 }
+
+/* Navigation */
 
 nav {
     display: flex;
@@ -29,26 +33,22 @@ nav {
     margin-left: 35px;
 }
 
+/* Hero-sektion med afstand, højde og baggrundsbillede */
 
-/* Luft omkring indholdet i hero-sektionen */
 #hero {
-    padding: 100px 60px;
-}
-
-
-/* Hero-sektionens højde */
-#hero {
-    padding: 100px 60px;
+    padding: 180px 60px;
     min-height: 900px;
 
-/* Baggrundsbillede i hero-sektionen */
+    /* Baggrundsbillede */
     background-image: url("../img/hero-image.jpg");
-/* Baggrundsbilledet fylder hele hero-sektionen */
+
+    /* Baggrundsbilledet fylder hele sektionen */
     background-size: cover;
 
- display: flex;
-flex-direction: column;
-justify-content: flex-start;
+    /* Placering af indhold */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 
