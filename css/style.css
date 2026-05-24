@@ -103,3 +103,31 @@ nav {
     font-size: 48px;
     margin-bottom: 20px;
 }
+
+.product-info h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.product-info p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.product-price {
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+.color-name {
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #BDBDBD;
+    margin: 25px 0;
+}
