@@ -12,11 +12,16 @@ body {
     font-family: Arial, sans-serif;
 }
 
-/* Header */
+
+ /* Placerer navigationen oven på hero-billedet */
 
 header {
     width: 100%;
     padding: 25px 60px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
 
 /* Navigation */
