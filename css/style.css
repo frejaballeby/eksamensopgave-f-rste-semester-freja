@@ -61,9 +61,19 @@ nav {
     font-size: 64px;
     margin: 0;
     line-height: 1.2;
+    color: white;
 }
 
 /* Størrelse på hero-tekst */
 #hero p {
     font-size: 20px;
+    color: white;
+    margin-top: 5px;
+}
+
+/* Introduktionstekst over hero-overskriften */
+.intro-tekst {
+    letter-spacing: 5px;
+     font-size: 16px;
+     margin-bottom: 20px;
 }
