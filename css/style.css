@@ -229,22 +229,28 @@ hr {
 #features {
     display: flex;
     justify-content: center;
-    gap: 40px;
+    gap: 50px;
 
-    padding: 100px 80px;
-
+    padding: 80px 60px;
     background-color: #FBF9F7;
 }
 
 .feature {
-    width: 220px;
+    width: 190px;
     text-align: center;
 }
 
+.feature img {
+    width: 90px;
+    margin-bottom: 25px;
+}
+
 .feature h3 {
-    height: 60px;
+    font-size: 20px;
+    margin-bottom: 25px;
 }
 
 .feature p {
+    font-size: 15px;
     line-height: 1.6;
 }
