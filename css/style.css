@@ -207,3 +207,13 @@ hr {
 .cta-button:hover {
     opacity: 0.9;
 }
+
+/* Sikrer at alle 4 højtalere har ens størrelse */
+#product img {
+    width: 500px;
+    max-height: 500px;
+}
+
+
+
+FBF9F7
