@@ -163,3 +163,22 @@ hr {
     background-color: #F7F3F0;
     border: 1px solid #D8D8D8;
 }
+
+/* Købsknap CTA */
+
+.product-info button {
+    width: 100%;
+    padding: 18px;
+
+    background-color: #3B3533;
+    color: white;
+
+    border: none;
+    border-radius: 40px;
+
+    font-size: 20px;
+
+    margin-top: 30px;
+
+    cursor: pointer;
+}
