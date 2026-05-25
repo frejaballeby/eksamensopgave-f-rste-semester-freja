@@ -187,6 +187,28 @@ hr {
     border: 2px solid #8A8A8A;
 }
 
+.active-color.dusty {
+    border: 2px solid #C99AA6;
+}
+
+.active-color.lavender {
+    border: 2px solid #8F88C9;
+}
+
+.active-color.sage {
+    border: 2px solid #9DAA72;
+}
+
+.active-color.moonlight {
+    border: 2px solid #BEBEBE;
+}
+
+
+
+
+
+
+
 /* Købsknap CTA */
 
 .cta-button {
