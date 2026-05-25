@@ -254,3 +254,14 @@ hr {
     font-size: 15px;
     line-height: 1.6;
 }
+
+.gradient-divider {
+    height: 250px;
+
+    background: linear-gradient(
+        to bottom,
+        #FBF9F7 0%,
+        #E6EAD3 50%,
+        #CCD5AE 100%
+    );
+}
