@@ -204,11 +204,6 @@ hr {
 }
 
 
-
-
-
-
-
 /* Købsknap CTA */
 
 .cta-button {
@@ -227,4 +222,29 @@ hr {
 
 .cta-button:hover {
     opacity: 0.9;
+}
+
+/* Produktfordele */
+
+#features {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+
+    padding: 100px 80px;
+
+    background-color: #FBF9F7;
+}
+
+.feature {
+    width: 220px;
+    text-align: center;
+}
+
+.feature h3 {
+    height: 60px;
+}
+
+.feature p {
+    line-height: 1.6;
 }
