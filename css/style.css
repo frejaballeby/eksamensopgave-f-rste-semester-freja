@@ -182,3 +182,13 @@ hr {
 
     cursor: pointer;
 }
+
+/* Størrelse af højtaler-billede */
+#product img {
+    width: 500px;
+}
+
+/* Hover effekt på CTA */
+.product-info button:hover {
+    opacity: 0.9;
+}
