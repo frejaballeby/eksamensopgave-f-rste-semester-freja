@@ -422,4 +422,58 @@ opacity: 0.8;
  /* Gør teksten mere læsbar oven på billedet */
     text-shadow: 0 2px 10px rgba(0,0,0,0.4);
 }
+/* Final CTA */
 
+#final-cta {
+    background-color: #D4D9BE;
+    text-align: center;
+    padding: 120px 80px;
+}
+
+#final-cta h2 {
+    font-size: 64px;
+    font-weight: 300;
+    margin-bottom: 60px;
+    color: #5A4A43;
+}
+
+.cta-benefits {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-bottom: 70px;
+}
+
+.cta-benefits p {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 20px;
+}
+
+.cta-benefits img {
+    width: 30px;
+}
+
+.final-button {
+    display: inline-block;
+    padding: 24px 120px;
+    background-color: #FBF9F7;
+    color: #5A4A43;
+    border-radius: 999px;
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.final-price {
+    font-size: 56px;
+    font-weight: 700;
+    margin-top: 80px;
+    color: #5A4A43;
+}
+
+.final-button:hover {
+    opacity: 0.8;
+}
