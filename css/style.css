@@ -379,3 +379,47 @@ hr {
 .social-button:hover {
     opacity: 0.9;
 }
+
+#community {
+    height: 700px;
+
+ /* Baggrundsbillede */
+    background-image: url("../img/community.png");
+
+/* Gør baggrundsbilledet mere dæmpet for bedre læsbarhed */
+opacity: 0.8;
+
+
+/* Billedet fylder hele sektionen */
+    background-size: cover;
+    background-position: center;
+
+ /* Centrerer teksten både lodret og vandret */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+/* Styling af overskrift i community-sektion */
+#community h2 {
+    max-width: 900px;
+    margin: 0 auto;
+
+    color: white;
+    font-size: 72px;
+    text-align: center;
+}
+
+#community h2 {
+    color: white;
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 1.2;
+
+ /* Gør teksten mere læsbar oven på billedet */
+    text-shadow: 0 2px 10px rgba(0,0,0,0.4);
+}
+
