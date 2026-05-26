@@ -370,3 +370,12 @@ hr {
 .phone-image {
     width: 300px;
 }
+
+/* Hover på CTA-knappen */
+.social-button {
+    transition: 0.3s;
+}
+
+.social-button:hover {
+    opacity: 0.9;
+}
