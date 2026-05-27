@@ -47,57 +47,74 @@ nav {
     color: white;
 }
 
-
-/* Hero-sektion */
+/* Hero-sektion med baggrundsbillede og tekst ovenpå */
 
 #hero {
-
     padding: 180px 80px;
     min-height: 900px;
 
     background-image: url("../img/hero-image.jpg");
-
     background-size: cover;
     background-position: center;
 
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
 }
 
-
-/* Hero-overskrift */
+/* Styling af hero-overskriften (Mød den nye LUMINA One) */
 
 #hero h2 {
-    font-size: 64px;
-    line-height: 1.2;
+    font-size: 88px;
+    line-height: 1.05;
+    font-weight: 400;
+
+    letter-spacing: 1px;
 
     color: white;
+}
+
+/* Gør kun 'LUMINA' tyndere end resten af overskriften */
+
+#hero strong {
+    font-weight: 200;
+}
+#hero strong {
+    font-weight: 200;
 }
 
 
 /* Hero-tekst */
 
 #hero p {
-    font-size: 20px;
+    font-size: 22px;
 
     color: white;
 
-    margin-top: 5px;
+    margin-top: 10px;
+
+    font-weight: 300;
+
+    line-height: 1.5;
 }
 
 
 /* Intro-tekst */
 
 .intro-tekst {
-    letter-spacing: 5px;
 
-    font-size: 16px;
+    letter-spacing: 6px;
 
-    margin-bottom: 20px;
+    font-size: 20px;
+
+    font-weight: 300;
+
+    margin-bottom: 25px;
+
+    text-transform: uppercase;
+
+    color: white;
 }
-
-
 /* Produktsektion */
 
 #product {
@@ -188,7 +205,7 @@ nav {
 
 .product-price {
 
-    font-size: 32px;
+    font-size: 48px;
 
     font-weight: bold;
 
