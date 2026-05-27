@@ -82,3 +82,25 @@ document.getElementById("moonlight-btn").onclick = function () {
     productImage.src = "img/moonlight-white.png";
     colorName.textContent = "Moonlight White";
 };
+
+
+// Finder tilmeld-knappen
+const signupBtn = document.getElementById("signupBtn");
+
+// Når brugeren klikker på knappen
+signupBtn.addEventListener("click", function(event) {
+
+    // Forhindrer siden i at genindlæse
+    event.preventDefault();
+
+    // Henter værdien fra inputfeltet
+    const email = document.getElementById("email").value;
+
+    // Tjekker om brugeren har skrevet noget
+    if (email !== "") {
+        alert("Tak for din tilmelding!");
+    } else {
+        alert("Indtast din e-mailadresse.");
+    }
+
+});
