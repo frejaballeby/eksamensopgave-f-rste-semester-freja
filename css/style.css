@@ -6,22 +6,27 @@
     box-sizing: border-box;
 }
 
-/* Generel typografi på hele hjemmesiden */
+
+/* Generel typografi */
 
 body {
     font-family: Arial, sans-serif;
 }
 
-/* Placerer navigationen oven på hero-billedet */
+
+/* Header */
 
 header {
     width: 100%;
     padding: 25px 60px;
+
     position: absolute;
     top: 0;
     left: 0;
+
     z-index: 1;
 }
+
 
 /* Navigation */
 
@@ -31,138 +36,252 @@ nav {
     align-items: center;
 }
 
-/* Styling af navigationslinks */
+
+/* Navigationslinks */
 
 .nav-links a {
     margin-left: 35px;
+
+    text-decoration: none;
+    color: white;
 }
 
-/* Hero-sektion med afstand, højde og baggrundsbillede */
+
+/* Hero-sektion */
 
 #hero {
+
     padding: 180px 80px;
     min-height: 900px;
 
-    /* Baggrundsbillede */
     background-image: url("../img/hero-image.jpg");
 
-    /* Baggrundsbilledet fylder hele sektionen */
     background-size: cover;
+    background-position: center;
 
-    /* Placering af indhold */
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
 }
 
-/* Størrelse på hero-overskriften */
+
+/* Hero-overskrift */
 
 #hero h2 {
     font-size: 64px;
-    margin: 0;
     line-height: 1.2;
+
     color: white;
 }
 
-/* Størrelse på hero-tekst */
+
+/* Hero-tekst */
 
 #hero p {
     font-size: 20px;
+
     color: white;
+
     margin-top: 5px;
 }
 
-/* Introduktionstekst over hero-overskriften */
+
+/* Intro-tekst */
 
 .intro-tekst {
     letter-spacing: 5px;
+
     font-size: 16px;
+
     margin-bottom: 20px;
 }
+
 
 /* Produktsektion */
 
 #product {
+
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+
+    gap: 100px;
+
     padding: 100px 80px;
+
     background-color: #FBF9F7;
 }
 
-/* Produktbillede */
 
-#product img {
-    width: 500px;
-    max-height: 500px;
+/* Område rundt om højtaleren */
+.speaker-wrapper {
+
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
+
+
+/* Blød gradient bag højtaleren */
+
+.speaker-wrapper::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 1000px;
+    height: 1000px;
+
+    background: var(--speaker-gradient);
+
+    border-radius: 50%;
+
+    filter: blur(180px);
+
+    opacity: 0.6;
+
+    z-index: -1;
+
+    transition: 0.5s ease;
+
+}
+
+
+/* Højtalerbillede */
+
+#product-image {
+
+    width: 500px;
+
+    position: relative;
+
+    z-index: 2;
+
+}
+
+/* Højtalerbillede */
+
+#product-image {
+
+    width: 80%;
+
+    max-height: 450px;
+
+    object-fit: contain;
+
+    transition: 0.3s ease;
+}
+
 
 /* Produktinformation */
 
 .product-info {
+
     width: 420px;
+
     text-align: center;
 }
 
-/* Overskrift i produktsektionen */
+
+/* Produktoverskrifter */
 
 .product-info h2 {
+
     font-size: 48px;
+
     margin-bottom: 20px;
 }
 
 .product-info h3 {
+
     font-size: 24px;
+
     margin-bottom: 20px;
 }
 
+
+/* Produkttekst */
+
 .product-info p {
+
     font-size: 18px;
+
     line-height: 1.5;
 }
+
 
 /* Pris */
 
 .product-price {
+
     font-size: 32px;
+
     font-weight: bold;
+
     margin-top: 40px;
 }
 
-/* Horizontal Rules */
+
+/* Vandrette linjer */
 
 hr {
+
     border: none;
+
     height: 1px;
+
     background-color: #BDBDBD;
+
     margin: 25px 0;
 }
+
 
 /* Farvenavn */
 
 .color-name {
+
     font-size: 20px;
+
     margin-top: 25px;
     margin-bottom: 15px;
 }
 
+
 /* Farvevalg */
 
 .color-options {
+
     display: flex;
     justify-content: center;
+
     gap: 20px;
+
     margin-bottom: 25px;
 }
 
+
+/* Farvecirkler */
+
 .color {
+
     width: 35px;
     height: 35px;
+
     border-radius: 50%;
-    border: none;
-    outline: none;
+
+    border: 2px solid transparent;
+
     cursor: pointer;
+
+    transition: 0.3s ease;
 }
+
+
+/* Farver */
 
 .dusty {
     background-color: #E8C2CA;
@@ -178,87 +297,103 @@ hr {
 
 .moonlight {
     background-color: #F7F3F0;
-    border: 1px solid #D8D8D8;
 }
 
-/* Border rundt om den aktive farvecirkel */
+
+/* Aktiv farvecirkel */
 
 .active-color {
-    border: 2px solid #8A8A8A;
-}
 
-.active-color.dusty {
-    border: 2px solid #C99AA6;
-}
-
-.active-color.lavender {
-    border: 2px solid #8F88C9;
-}
-
-.active-color.sage {
-    border: 2px solid #9DAA72;
-}
-
-.active-color.moonlight {
-    border: 2px solid #BEBEBE;
+    border: 2px solid #1f1f1f;
 }
 
 
-/* Købsknap CTA */
+/* CTA-knap */
 
 .cta-button {
+
     width: 100%;
+
     padding: 18px;
+
     background-color: #3B3533;
     color: white;
+
     border: none;
+
     border-radius: 40px;
+
     font-size: 20px;
+
     margin-top: 30px;
+
     cursor: pointer;
+
+    transition: 0.3s ease;
 }
 
-/* Hover effekt på CTA */
+
+/* Hover på CTA */
 
 .cta-button:hover {
     opacity: 0.9;
 }
 
+
 /* Produktfordele */
 
 #features {
+
     display: flex;
     justify-content: center;
+
     gap: 50px;
 
     padding: 80px 60px;
+
     background-color: #FBF9F7;
 }
 
+
+/* Feature cards */
+
 .feature {
+
     width: 190px;
+
     text-align: center;
 }
 
 .feature img {
+
     width: 90px;
+
     margin-bottom: 25px;
 }
 
 .feature h3 {
+
     font-size: 20px;
+
     margin-bottom: 25px;
 }
 
 .feature p {
+
     font-size: 15px;
+
     line-height: 1.6;
 }
 
+
+/* Gradient divider */
+
 .gradient-divider {
+
     height: 300px;
 
-    background: linear-gradient(
+    background:
+    linear-gradient(
         to bottom,
         #CCD5AE 0%,
         #E8EAD9 50%,
@@ -267,60 +402,65 @@ hr {
 }
 
 
-/* Trustpilot sektion */
+/* Trustpilot */
 
 #trustpilot {
+
     padding: 100px 80px;
+
     background-color: #FBF9F7;
+
     text-align: center;
 }
 
+
+/* Trustpilot logo */
+
 .trustpilot-logo {
+
     display: flex;
     justify-content: center;
     align-items: center;
+
     gap: 15px;
 
     margin-bottom: 40px;
 }
 
 .trustpilot-logo img {
+
     width: 55px;
-    margin: 0;
 }
 
 .trustpilot-logo h2 {
+
     font-size: 48px;
-    margin: 0;
 }
 
+
+/* Trustpilot rating */
+
 .trustpilot-rating {
+
     display: flex;
     justify-content: center;
     align-items: center;
+
     gap: 20px;
 
     margin: 30px 0;
 }
 
 .trustpilot-rating img {
+
     width: 240px;
-    margin: 0;
 }
 
-#trustpilot h3 {
-    font-size: 24px;
-    margin-bottom: 15px;
-}
 
-#trustpilot p {
-    font-size: 18px;
-    margin-bottom: 15px;
-}
-
-/* Social Connect sektion */
+/* Social Connect */
 
 #social-connect {
+
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -330,28 +470,41 @@ hr {
     background-color: #FBF9F7;
 }
 
+
+/* Social content */
+
 .social-content {
+
     max-width: 550px;
 }
 
 .social-content h2 {
+
     font-size: 56px;
+
     margin-bottom: 60px;
 }
 
 .social-content p {
+
     font-size: 24px;
+
     line-height: 1.5;
 
     margin-bottom: 50px;
 }
 
+
+/* Social button */
+
 .social-button {
+
     display: inline-block;
 
     padding: 24px 50px;
 
     background-color: #111111;
+
     color: white;
 
     text-decoration: none;
@@ -361,40 +514,43 @@ hr {
     font-size: 24px;
 
     margin-bottom: 50px;
+
+    transition: 0.3s ease;
 }
 
-.download-apps {
-    width: 180px;
-}
 
-.phone-image {
-    width: 300px;
-}
-
-/* Hover på CTA-knappen */
-.social-button {
-    transition: 0.3s;
-}
+/* Hover på social button */
 
 .social-button:hover {
     opacity: 0.9;
 }
 
+
+/* Download apps */
+
+.download-apps {
+    width: 180px;
+}
+
+
+/* Telefon billede */
+
+.phone-image {
+    width: 300px;
+}
+
+
+/* Community sektion */
+
 #community {
+
     height: 700px;
 
- /* Baggrundsbillede */
     background-image: url("../img/community.png");
 
-/* Gør baggrundsbilledet mere dæmpet for bedre læsbarhed */
-opacity: 0.8;
-
-
-/* Billedet fylder hele sektionen */
     background-size: cover;
     background-position: center;
 
- /* Centrerer teksten både lodret og vandret */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -403,51 +559,66 @@ opacity: 0.8;
     text-align: center;
 }
 
-/* Styling af overskrift i community-sektion */
-#community h2 {
-    max-width: 900px;
-    margin: 0 auto;
 
-    color: white;
-    font-size: 72px;
-    text-align: center;
-}
+/* Community overskrift */
 
 #community h2 {
+
     color: white;
+
     font-size: 64px;
+
     font-weight: 400;
+
     line-height: 1.2;
 
- /* Gør teksten mere læsbar oven på billedet */
-    text-shadow: 0 2px 10px rgba(0,0,0,0.4);
+    text-shadow:
+    0 2px 10px rgba(0,0,0,0.4);
 }
+
+
 /* Final CTA */
 
 #final-cta {
+
     background-color: #D4D9BE;
+
     text-align: center;
+
     padding: 120px 80px;
 }
 
 #final-cta h2 {
+
     font-size: 64px;
+
     font-weight: 300;
+
     margin-bottom: 60px;
+
     color: #5A4A43;
 }
 
+
+/* CTA benefits */
+
 .cta-benefits {
+
     display: flex;
     justify-content: center;
+
     gap: 60px;
+
     margin-bottom: 70px;
 }
 
 .cta-benefits p {
+
     display: flex;
     align-items: center;
+
     gap: 12px;
+
     font-size: 20px;
 }
 
@@ -455,125 +626,185 @@ opacity: 0.8;
     width: 30px;
 }
 
+
+/* Final button */
+
 .final-button {
+
     display: inline-block;
+
     padding: 24px 120px;
+
     background-color: #FBF9F7;
+
     color: #5A4A43;
+
     border-radius: 999px;
+
     text-decoration: none;
+
     font-size: 28px;
+
     font-weight: 600;
+
     margin-top: 20px;
+
+    transition: 0.3s ease;
 }
 
-.final-price {
-    font-size: 56px;
-    font-weight: 700;
-    margin-top: 80px;
-    color: #5A4A43;
-}
+
+/* Hover på final button */
 
 .final-button:hover {
     opacity: 0.8;
 }
 
+
+/* Pris */
+
+.final-price {
+
+    font-size: 56px;
+
+    font-weight: 700;
+
+    margin-top: 80px;
+
+    color: #5A4A43;
+}
+
+
 /* Footer */
 
 #footer {
+
     background-color: #FBF9F7;
+
     padding: 100px 80px 40px;
 }
 
+
+/* Footer overskrift */
+
 #footer h2 {
+
     font-size: 48px;
+
     margin-bottom: 60px;
 }
+
 
 /* Footer layout */
 
 .footer-content {
+
     display: flex;
     justify-content: space-between;
+
     gap: 80px;
 }
 
 .footer-content article {
+
     width: 30%;
 }
+
+
+/* Footer undertitler */
 
 .footer-content h3 {
     margin-bottom: 25px;
 }
 
-/* Nyhedsbrev */
 
-.email-placeholder {
-    font-size: 22px;
-    font-weight: 300;
-    color: #4A4A4A;
-    margin-bottom: 10px;
-}
-
-.email-line {
-    width: 100%;
-    height: 1px;
-    background-color: #333;
-    margin-bottom: 25px;
-}
+/* Footer button */
 
 .footer-button {
+
     display: block;
+
     background-color: #3B3533;
+
     color: white;
+
     padding: 18px 0;
+
     border-radius: 50px;
+
     text-align: center;
+
     text-decoration: none;
+
     font-size: 22px;
+
     font-weight: 600;
+
     margin-bottom: 40px;
+
+    transition: 0.3s ease;
 }
+
+
+/* Hover på footer button */
 
 .footer-button:hover {
     opacity: 0.9;
 }
 
+
+/* Newsletter tekst */
+
 .newsletter-text {
+
     font-size: 12px;
+
     line-height: 1.4;
 }
+
 
 /* Footer ikoner */
 
 .footer-app p,
 .footer-social p {
+
     display: flex;
     align-items: center;
+
     gap: 14px;
+
     margin-bottom: 25px;
 }
 
 .footer-content img {
+
     width: 32px;
     height: 32px;
+
     object-fit: contain;
 }
+
 
 /* Footer bund */
 
 .footer-bottom {
+
     display: flex;
     justify-content: space-between;
+
     gap: 40px;
+
     margin-top: 100px;
+
     font-size: 14px;
+
     color: #4A4A4A;
 }
+
 
 /* E-mail felt */
 
 #email {
+
     width: 100%;
 
     border: none;
@@ -582,9 +813,11 @@ opacity: 0.8;
     background: transparent;
 
     font-size: 22px;
+
     font-weight: 300;
 
     padding-bottom: 10px;
+
     margin-bottom: 30px;
 
     outline: none;

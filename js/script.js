@@ -1,106 +1,212 @@
-"use strict"
+"use strict";
 
-const productImage = document.getElementById("product-image");
-const colorName = document.getElementById("color-name");
 
-document.getElementById("dusty-btn").onclick = function () {
-    productImage.src = "img/dusty-rose.png";
-    colorName.textContent = "Dusty Rose";
-};
+// Finder produktbillede
+const productImage =
+    document.getElementById("product-image");
 
-document.getElementById("lavender-btn").onclick = function () {
-    productImage.src = "img/lavender-mist.png";
-    colorName.textContent = "Lavender Mist";
-};
 
-document.getElementById("sage-btn").onclick = function () {
-    productImage.src = "img/sagegreen.png";
-    colorName.textContent = "Sage Green";
-};
+// Finder farvenavn
+const colorName =
+    document.getElementById("color-name");
 
-document.getElementById("moonlight-btn").onclick = function () {
-    productImage.src = "img/moonlight-white.png";
-    colorName.textContent = "Moonlight White";
-};
 
-// Border om farvecirkler //
+// Finder området rundt om højtaleren
+const speakerWrapper =
+    document.querySelector(".speaker-wrapper");
 
-const colorButtons = document.querySelectorAll(".color");
 
+// Finder alle farvecirkler
+const colorButtons =
+    document.querySelectorAll(".color");
+
+
+// Gemmer den valgte farve
+let selectedImage =
+    "img/speakers (color)/dusty-rose.png";
+
+let selectedColor =
+    "Dusty Rose";
+
+let selectedGradient =
+    "linear-gradient(135deg, #E8C2CA, #F7F3F0)";
+
+
+// Fjerner aktiv border fra alle farvecirkler
 function removeActiveColor() {
+
     colorButtons.forEach(button => {
+
         button.classList.remove("active-color");
+
     });
 
-// Dusty Rose border //
 }
-document.getElementById("dusty-btn").onclick = function () {
 
-    removeActiveColor();
 
-    document.getElementById("dusty-btn")
-        .classList.add("active-color");
+// Funktion til farveskift
+function chooseColor(
+    button,
+    image,
+    name,
+    gradient
+) {
 
-    productImage.src = "img/dusty-rose.png";
-    colorName.textContent = "Dusty Rose";
-};
+    // Når musen føres over farvecirklen
+    button.onmouseenter = function () {
 
-// Lavender Mist border //
-document.getElementById("lavender-btn").onclick = function () {
+        productImage.src = image;
 
-    removeActiveColor();
+        colorName.textContent = name;
 
-    document.getElementById("lavender-btn")
-        .classList.add("active-color");
+     speakerWrapper.style.setProperty(
+    "--speaker-gradient",
+    gradient
+);
 
-    productImage.src = "img/lavender-mist.png";
-    colorName.textContent = "Lavender Mist";
-};
 
-// Sage Green border //
+    // Når musen fjernes igen
+    button.onmouseleave = function () {
 
-document.getElementById("sage-btn").onclick = function () {
+        productImage.src = selectedImage;
 
-    removeActiveColor();
+        colorName.textContent = selectedColor;
 
-    document.getElementById("sage-btn")
-        .classList.add("active-color");
+        speakerWrapper.style.background =
+            selectedGradient;
 
-    productImage.src = "img/sagegreen.png";
-    colorName.textContent = "Sage Green";
-};
+    };
 
-// Moonlight White //
 
-document.getElementById("moonlight-btn").onclick = function () {
+    // Når brugeren klikker på farven
+    button.onclick = function () {
 
-    removeActiveColor();
+        removeActiveColor();
 
-    document.getElementById("moonlight-btn")
-        .classList.add("active-color");
+        button.classList.add("active-color");
 
-    productImage.src = "img/moonlight-white.png";
-    colorName.textContent = "Moonlight White";
-};
+        // Gemmer den valgte farve
+        selectedImage = image;
+
+        selectedColor = name;
+
+        selectedGradient = gradient;
+
+        // Opdaterer produktvisningen
+        productImage.src = image;
+
+        colorName.textContent = name;
+
+        speakerWrapper.style.background =
+            gradient;
+
+    };
+
+}
+
+
+/* -----------------------------
+   Dusty Rose
+----------------------------- */
+
+chooseColor(
+
+    document.getElementById("dusty-btn"),
+
+    "img/speakers (color)/dusty-rose.png",
+
+    "Dusty Rose",
+
+    "linear-gradient(135deg, #E8C2CA, #F7F3F0)"
+
+);
+
+
+/* -----------------------------
+   Lavender Mist
+----------------------------- */
+
+chooseColor(
+
+    document.getElementById("lavender-btn"),
+
+    "img/speakers (color)/lavender-mist.png",
+
+    "Lavender Mist",
+
+    "linear-gradient(135deg, #B7B2D9, #F1EEFF)"
+
+);
+
+
+/* -----------------------------
+   Sage Green
+----------------------------- */
+
+chooseColor(
+
+    document.getElementById("sage-btn"),
+
+    "img/speakers (color)/sagegreen.png",
+
+    "Sage Green",
+
+    "linear-gradient(135deg, #CCD5AE, #EEF2E3)"
+
+);
+
+
+/* -----------------------------
+   Moonlight White
+----------------------------- */
+
+chooseColor(
+
+    document.getElementById("moonlight-btn"),
+
+    "img/speakers (color)/moonlight-white.png",
+
+    "Moonlight White",
+
+    "linear-gradient(135deg, #F7F3F0, #FFFFFF)"
+
+);
+
+
+/* -----------------------------
+   Newsletter tilmelding
+----------------------------- */
 
 
 // Finder tilmeld-knappen
-const signupBtn = document.getElementById("signupBtn");
+const signupBtn =
+    document.getElementById("signupBtn");
 
-// Når brugeren klikker på knappen
-signupBtn.addEventListener("click", function(event) {
 
-    // Forhindrer siden i at genindlæse
-    event.preventDefault();
+// Tjekker om knappen findes
+if (signupBtn) {
 
-    // Henter værdien fra inputfeltet
-    const email = document.getElementById("email").value;
+    // Når brugeren klikker på knappen
+    signupBtn.addEventListener("click", function(event) {
 
-    // Tjekker om brugeren har skrevet noget
-    if (email !== "") {
-        alert("Tak for din tilmelding!");
-    } else {
-        alert("Indtast din e-mailadresse.");
-    }
+        // Stopper siden i at reloade
+        event.preventDefault();
 
-});
+        // Finder brugerens e-mail
+        const email =
+            document.getElementById("email").value;
+
+        // Tjekker om feltet er udfyldt
+        if (email !== "") {
+
+            alert("Tak for din tilmelding!");
+
+        } else {
+
+            alert("Indtast din e-mailadresse.");
+
+        }
+
+    });
+
+}
