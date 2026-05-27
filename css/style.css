@@ -10,7 +10,7 @@
 /* Generel typografi */
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Inter", sans-serif;
 }
 
 
@@ -34,6 +34,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: 24px;
 }
 
 
@@ -109,14 +110,21 @@ nav {
 
     padding: 100px 80px;
 
-    background-color: #FBF9F7;
+    background:
+    linear-gradient(
+        90deg,
+        #E8C2CA 0%,
+        #F7F3F0 35%,
+        #FBF9F7 70%
+    );
+
+    transition: 0.5s ease;
 }
 
 
 /* Område rundt om højtaleren */
-.speaker-wrapper {
 
-    position: relative;
+.speaker-wrapper {
 
     display: flex;
     justify-content: center;
@@ -124,44 +132,6 @@ nav {
 
 }
 
-
-/* Blød gradient bag højtaleren */
-
-.speaker-wrapper::before {
-
-    content: "";
-
-    position: absolute;
-
-    width: 1000px;
-    height: 1000px;
-
-    background: var(--speaker-gradient);
-
-    border-radius: 50%;
-
-    filter: blur(180px);
-
-    opacity: 0.6;
-
-    z-index: -1;
-
-    transition: 0.5s ease;
-
-}
-
-
-/* Højtalerbillede */
-
-#product-image {
-
-    width: 500px;
-
-    position: relative;
-
-    z-index: 2;
-
-}
 
 /* Højtalerbillede */
 

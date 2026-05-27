@@ -1,27 +1,34 @@
 "use strict";
 
+// --- PRODUKT SEKTION ---
 
-// Finder produktbillede
+// Finder produktbillede i HTML så det senere kan ændres
+
 const productImage =
     document.getElementById("product-image");
 
 
-// Finder farvenavn
+// Finder teksten hvor der står farvenavn, fx "Dusty Rose"
+
 const colorName =
     document.getElementById("color-name");
 
 
-// Finder området rundt om højtaleren
-const speakerWrapper =
-    document.querySelector(".speaker-wrapper");
+// Finder hele produktsektionen
+
+const productSection =
+    document.getElementById("product");
 
 
 // Finder alle farvecirkler
+
 const colorButtons =
     document.querySelectorAll(".color");
 
 
-// Gemmer den valgte farve
+// Når siden starter, er Dusty Rose valgt
+// let bruges, fordi værdierne skal kunne ændre sig, når brugeren klikker på en ny farve.
+
 let selectedImage =
     "img/speakers (color)/dusty-rose.png";
 
@@ -29,10 +36,11 @@ let selectedColor =
     "Dusty Rose";
 
 let selectedGradient =
-    "linear-gradient(135deg, #E8C2CA, #F7F3F0)";
+    "linear-gradient(90deg, #E8C2CA 0%, #F7F3F0 35%, #FBF9F7 70%)";
 
 
-// Fjerner aktiv border fra alle farvecirkler
+// Fjerner aktiv border fra alle farvecirkler, så ikke der er border om flere farver på samme tid.
+
 function removeActiveColor() {
 
     colorButtons.forEach(button => {
@@ -43,8 +51,8 @@ function removeActiveColor() {
 
 }
 
+// Genbrugelig funktion til farveskift. Bruges til at opdatere højtaler, tekst og baggrund.
 
-// Funktion til farveskift
 function chooseColor(
     button,
     image,
@@ -52,62 +60,63 @@ function chooseColor(
     gradient
 ) {
 
-    // Når musen føres over farvecirklen
-    button.onmouseenter = function () {
 
-        productImage.src = image;
+// Hover: når musen føres over farvecirklen, previewes farven
 
-        colorName.textContent = name;
+button.onmouseenter = function () {
 
-     speakerWrapper.style.setProperty(
-    "--speaker-gradient",
-    gradient
-);
+productImage.src = image;
 
-
-    // Når musen fjernes igen
-    button.onmouseleave = function () {
-
-        productImage.src = selectedImage;
-
-        colorName.textContent = selectedColor;
-
-        speakerWrapper.style.background =
-            selectedGradient;
+    colorName.textContent = name;
+    productSection.style.background = gradient;
 
     };
 
 
-    // Når brugeren klikker på farven
+// Mouseleave: Når musen fjernes igen, går siden tilbage til den sidste farve der blev klikket på
+
+button.onmouseleave = function () {
+
+    productImage.src = selectedImage;
+
+    colorName.textContent = selectedColor;
+    productSection.style.background = selectedGradient;
+
+    };
+
+
+    // Click: Når brugeren klikker på farven
     button.onclick = function () {
 
+    // Fjerner border fra alle cirkler
         removeActiveColor();
 
+    // Tilføjer border til den cirkel, der klikkes på
         button.classList.add("active-color");
 
-        // Gemmer den valgte farve
+        // Gemmer den nye valgte farve
         selectedImage = image;
 
         selectedColor = name;
 
         selectedGradient = gradient;
 
-        // Opdaterer produktvisningen
+        // Opdaterer produktvisningen: Viser den valgte højtaler, tekst og baggrund på siden.
         productImage.src = image;
 
         colorName.textContent = name;
 
-        speakerWrapper.style.background =
+        productSection.style.background =
             gradient;
 
     };
 
 }
+// Funktionen chooseColor() bruges til hvert enkel farve
+// Funktionen ER lavet, men her bliver der fyldt værdier ind i den.
 
 
-/* -----------------------------
-   Dusty Rose
------------------------------ */
+// Dusty Rose
 
 chooseColor(
 
@@ -117,14 +126,12 @@ chooseColor(
 
     "Dusty Rose",
 
-    "linear-gradient(135deg, #E8C2CA, #F7F3F0)"
+    "linear-gradient(90deg, #E8C2CA 0%, #F7F3F0 35%, #FBF9F7 70%)"
 
 );
 
 
-/* -----------------------------
-   Lavender Mist
------------------------------ */
+// Lavender Mist
 
 chooseColor(
 
@@ -134,14 +141,12 @@ chooseColor(
 
     "Lavender Mist",
 
-    "linear-gradient(135deg, #B7B2D9, #F1EEFF)"
+    "linear-gradient(90deg, #B7B2D9 0%, #F1EEFF 35%, #FBF9F7 70%)"
 
 );
 
 
-/* -----------------------------
-   Sage Green
------------------------------ */
+// Sage Green
 
 chooseColor(
 
@@ -151,14 +156,12 @@ chooseColor(
 
     "Sage Green",
 
-    "linear-gradient(135deg, #CCD5AE, #EEF2E3)"
+    "linear-gradient(90deg, #CCD5AE 0%, #EEF2E3 35%, #FBF9F7 70%)"
 
 );
 
 
-/* -----------------------------
-   Moonlight White
------------------------------ */
+// Moonlight White
 
 chooseColor(
 
@@ -168,14 +171,12 @@ chooseColor(
 
     "Moonlight White",
 
-    "linear-gradient(135deg, #F7F3F0, #FFFFFF)"
+    "linear-gradient(90deg, #D9D9D9 0%, #F2F2F2 35%, #FBF9F7 70%)"
 
 );
 
 
-/* -----------------------------
-   Newsletter tilmelding
------------------------------ */
+// --- NEWSLETTER TILMELDING ---
 
 
 // Finder tilmeld-knappen
