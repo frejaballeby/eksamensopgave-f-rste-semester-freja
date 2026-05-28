@@ -800,7 +800,7 @@ hr {
 
 #footer {
 
-    background-color: #FBF9F7;
+    background-color: #F5F2EF;
 
     padding: 100px 80px 40px;
 }
@@ -824,7 +824,7 @@ hr {
 
     justify-content: space-between;
 
-    gap: 80px;
+    gap: 120px;
 }
 
 .footer-content article {
@@ -871,7 +871,7 @@ hr {
 /* Hover på footer button */
 
 .footer-button:hover {
-    opacity: 0.9;
+    opacity: 0.5;
 }
 
 
@@ -881,7 +881,7 @@ hr {
 
     font-size: 12px;
 
-    line-height: 1.4;
+    line-height: 1.6;
 }
 
 
@@ -915,7 +915,7 @@ hr {
 
     display: flex;
 
-    justify-content: space-between;
+    justify-content: center;
 
     gap: 40px;
 
