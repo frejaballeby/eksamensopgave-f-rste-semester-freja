@@ -29,14 +29,16 @@ const colorButtons =
 // Når siden starter, er Dusty Rose valgt
 // let bruges, fordi værdierne skal kunne ændre sig, når brugeren klikker på en ny farve.
 
+// Når siden starter, er Moonlight White valgt
+
 let selectedImage =
-    "img/speakers (color)/dusty-rose.png";
+    "img/speakers (color)/moonlight-white.png";
 
 let selectedColor =
-    "Dusty Rose";
+    "Moonlight White";
 
 let selectedGradient =
-    "linear-gradient(90deg, #E8C2CA 0%, #F7F3F0 35%, #FBF9F7 70%)";
+    "linear-gradient(90deg, #D9D9D9 0%, #F2F2F2 35%, #FBF9F7 70%)";
 
 
 // Fjerner aktiv border fra alle farvecirkler, så ikke der er border om flere farver på samme tid.
