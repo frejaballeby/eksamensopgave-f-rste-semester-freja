@@ -26,10 +26,8 @@ const colorButtons =
     document.querySelectorAll(".color");
 
 
-// Når siden starter, er Dusty Rose valgt
-// let bruges, fordi værdierne skal kunne ændre sig, når brugeren klikker på en ny farve.
-
 // Når siden starter, er Moonlight White valgt
+// let bruges, fordi værdierne skal kunne ændre sig, når brugeren klikker på en ny farve.
 
 let selectedImage =
     "img/speakers (color)/moonlight-white.png";
