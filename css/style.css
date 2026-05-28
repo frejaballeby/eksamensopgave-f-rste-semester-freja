@@ -41,7 +41,7 @@ nav {
 
     align-items: center;
 
-    font-size: 24px;
+    font-size: 18px;
 }
 
 
@@ -382,6 +382,7 @@ hr {
 }
 
 
+
 /* Produktfordele */
 
 #features {
@@ -390,13 +391,18 @@ hr {
 
     justify-content: center;
 
-    gap: 50px;
+    align-items: center;
 
-    padding: 80px 60px;
+    gap: 80px;
 
-    background-color: #FBF9F7;
+    /* Gør sektionen højere */
+
+    min-height: 700px;
+
+    padding: 0 60px;
+
+    background-color: #FCFAF8;
 }
-
 
 /* Feature cards */
 
@@ -437,7 +443,7 @@ hr {
 
     background:
     linear-gradient(
-        to bottom,
+        to top,
         #CCD5AE 0%,
         #E8EAD9 50%,
         #FBF9F7 100%
@@ -445,17 +451,23 @@ hr {
 }
 
 
-/* Trustpilot */
+/* Trustpilot sektion */
 
 #trustpilot {
 
-    padding: 100px 80px;
+    /* Rykker Trustpilot helt ned */
+
+    padding-top: 200px;
+
+    padding-bottom: 20px;
+
+    padding-left: 80px;
+    padding-right: 80px;
 
     background-color: #FBF9F7;
 
     text-align: center;
 }
-
 
 /* Trustpilot logo */
 
@@ -472,14 +484,22 @@ hr {
     margin-bottom: 40px;
 }
 
+
+/* Trustpilot stjerne */
+
 .trustpilot-logo img {
 
-    width: 55px;
+    width: 85px;
 }
+
+
+/* Trustpilot overskrift */
 
 .trustpilot-logo h2 {
 
-    font-size: 48px;
+    font-size: 56px;
+
+    font-weight: 550;
 }
 
 
@@ -498,9 +518,34 @@ hr {
     margin: 30px 0;
 }
 
+
+/* Trustpilot stjerner */
+
 .trustpilot-rating img {
 
     width: 240px;
+}
+
+
+/* Trustpilot undertitel */
+
+#trustpilot h3 {
+
+    font-size: 32px;
+
+    font-weight: 500;
+
+    margin-top: 40px;
+
+    margin-bottom: 50px;
+}
+
+
+/* Trustpilot tekst */
+
+#trustpilot p {
+
+    font-size: 22px;
 }
 
 
