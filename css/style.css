@@ -678,8 +678,6 @@ hr {
     text-shadow:
     0 2px 10px rgba(0,0,0,0.4);
 }
-
-
 /* Final CTA */
 
 #final-cta {
@@ -688,16 +686,21 @@ hr {
 
     text-align: center;
 
-    padding: 120px 80px;
+    padding: 140px 80px;
 }
+
+
+/* Overskrift */
 
 #final-cta h2 {
 
-    font-size: 64px;
+    font-size: 72px;
 
-    font-weight: 300;
+    font-weight: 400;
 
-    margin-bottom: 60px;
+    line-height: 1.1;
+
+    margin-bottom: 80px;
 
     color: #5A4A43;
 }
@@ -711,10 +714,13 @@ hr {
 
     justify-content: center;
 
-    gap: 60px;
+    gap: 70px;
 
-    margin-bottom: 70px;
+    margin-bottom: 90px;
 }
+
+
+/* Tekst under ikoner */
 
 .cta-benefits p {
 
@@ -724,10 +730,16 @@ hr {
 
     gap: 12px;
 
-    font-size: 20px;
+    font-size: 28px;
+
+    color: #3F3532;
 }
 
+
+/* Ikoner */
+
 .cta-benefits img {
+
     width: 30px;
 }
 
@@ -740,9 +752,11 @@ hr {
 
     padding: 24px 120px;
 
-    background-color: #FBF9F7;
+    /* Mørk knap giver mere kontrast */
 
-    color: #5A4A43;
+    background-color: #3F3532;
+
+    color: white;
 
     border-radius: 999px;
 
@@ -761,7 +775,10 @@ hr {
 /* Hover på final button */
 
 .final-button:hover {
-    opacity: 0.8;
+
+    opacity: 0.9;
+
+    transform: translateY(-2px);
 }
 
 
@@ -769,11 +786,11 @@ hr {
 
 .final-price {
 
-    font-size: 56px;
+    font-size: 64px;
 
     font-weight: 700;
 
-    margin-top: 80px;
+    margin-top: 120px;
 
     color: #5A4A43;
 }
