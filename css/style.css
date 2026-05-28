@@ -378,7 +378,7 @@ hr {
 /* Hover på CTA */
 
 .cta-button:hover {
-    opacity: 0.9;
+    opacity: 0.5;
 }
 
 
@@ -574,7 +574,7 @@ hr {
 
 .social-content h2 {
 
-    font-size: 56px;
+    font-size: 52px;
 
     margin-bottom: 60px;
 }
@@ -585,7 +585,7 @@ hr {
 
     line-height: 1.5;
 
-    margin-bottom: 50px;
+    margin-bottom: 70px;
 }
 
 
@@ -605,7 +605,7 @@ hr {
 
     border-radius: 999px;
 
-    font-size: 24px;
+    font-size: 22px;
 
     margin-bottom: 50px;
 
@@ -616,7 +616,7 @@ hr {
 /* Hover på social button */
 
 .social-button:hover {
-    opacity: 0.9;
+    opacity: 0.5;
 }
 
 
@@ -631,7 +631,7 @@ hr {
 
 .phone-image {
 
-    width: 20%;
+    width: 24%;
 
     position: relative;
 
