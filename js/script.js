@@ -54,13 +54,13 @@ function chooseColor(button, image, name, gradient) {
 }
 
 // Farverne sættes ind i den genbrugelige funktion
-chooseColor(document.getElementById("dusty-btn"), "img/speakers (color)/dusty-rose.png", "Dusty Rose", "linear-gradient(90deg, #E8C2CA 0%, #F7F3F0 35%, #FBF9F7 70%)");
+chooseColor(document.getElementById("dusty-btn"), "img/speakers-color/dusty-rose.png", "Dusty Rose", "linear-gradient(90deg, #E8C2CA 0%, #F7F3F0 35%, #FBF9F7 70%)");
 
-chooseColor(document.getElementById("lavender-btn"), "img/speakers (color)/lavender-mist.png", "Lavender Mist", "linear-gradient(90deg, #B7B2D9 0%, #F1EEFF 35%, #FBF9F7 70%)");
+chooseColor(document.getElementById("lavender-btn"), "img/speakers-color//lavender-mist.png", "Lavender Mist", "linear-gradient(90deg, #B7B2D9 0%, #F1EEFF 35%, #FBF9F7 70%)");
 
-chooseColor(document.getElementById("sage-btn"), "img/speakers (color)/sagegreen.png", "Sage Green", "linear-gradient(90deg, #CCD5AE 0%, #EEF2E3 35%, #FBF9F7 70%)");
+chooseColor(document.getElementById("sage-btn"), "img/speakers-color/sagegreen.png", "Sage Green", "linear-gradient(90deg, #CCD5AE 0%, #EEF2E3 35%, #FBF9F7 70%)");
 
-chooseColor(document.getElementById("moonlight-btn"), "img/speakers (color)/moonlight-white.png", "Moonlight White", "linear-gradient(90deg, #D9D9D9 0%, #F2F2F2 35%, #FBF9F7 70%)");
+chooseColor(document.getElementById("moonlight-btn"), "img/speakers-color/moonlight-white.png", "Moonlight White", "linear-gradient(90deg, #D9D9D9 0%, #F2F2F2 35%, #FBF9F7 70%)");
 
 
 // --- NEWSLETTER ---
