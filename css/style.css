@@ -7,14 +7,14 @@
 }
 
 
-/* Generel typografi */
+/* Generel typografi på hele siden */
 
 body {
     font-family: "Inter", sans-serif;
 }
 
 
-/* Header */
+/* Headeren placeres øverst oven på hero-billedet */
 
 header {
 
@@ -31,7 +31,7 @@ header {
 }
 
 
-/* Navigation */
+/* Flexbox placerer logo, links og ikoner på én linje */
 
 nav {
 
@@ -45,7 +45,7 @@ nav {
 }
 
 
-/* Navigationslinks */
+/* Styling af navigationslinks */
 
 .nav-links a {
 
@@ -55,13 +55,13 @@ nav {
 
     color: white;
 
-    /* Gør teksten lettere at læse */
+    /* Tekstskygge gør de hvide links lettere at læse oven på billedet */
 
     text-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
 }
 
 
-/* Hero-sektion */
+/* Hero-sektion med baggrundsbillede og introduktion til produktet */
 
 #hero {
 
@@ -82,14 +82,14 @@ nav {
 }
 
 
-/* Hero tekst */
+/* Generel afstand på tekst i hero-sektionen */
 
 #hero p {
     margin-top: 10px;
 }
 
 
-/* Lille tekst øverst */
+/* Lille intro-tekst over hovedoverskriften */
 
 .intro-tekst {
 
@@ -103,7 +103,7 @@ nav {
 }
 
 
-/* Overskrift */
+/* Hovedoverskrift i hero-sektionen */
 
 #hero h2 {
 
@@ -119,14 +119,14 @@ nav {
 }
 
 
-/* Gør kun LUMINA tyndere */
+/* Skaber typografisk kontrast ved at gøre LUMINA lettere */
 
 #hero strong {
     font-weight: 200;
 }
 
 
-/* Tekst under overskrift */
+/* Brødtekst under hero-overskriften */
 
 #hero p:not(.intro-tekst) {
 
@@ -144,7 +144,7 @@ nav {
 }
 
 
-/* Produktsektion */
+/* Produktsektion med højtaler, information og interaktivt farvevalg */
 
 #product {
 
@@ -158,7 +158,7 @@ nav {
 
     padding: 100px 120px;
 
-   /* Startbaggrund: Moonlight White */
+   /* Startbaggrund for Moonlight White */
 
 background:
 linear-gradient(
@@ -172,7 +172,7 @@ linear-gradient(
 }
 
 
-/* Område rundt om højtaleren */
+/* Område der centrerer højtalerbilledet */
 
 .speaker-wrapper {
 
@@ -184,24 +184,23 @@ linear-gradient(
 }
 
 
-/* Højtalerbillede */
+/* Styling af produktbilledet */
 
  #product-image {
 
-    /* Gør højtaleren større på siden */
+    /* Gør højtaleren stor og tydelig på siden */
 
     width: 95%;
 
-    /* Sætter en maksimal højde,
-       så billedet ikke bliver for stort */
+    /* Begrænser højden, så billedet ikke bliver for stort */
 
     max-height: 560px;
 
-    /* Sørger for at billedet ikke bliver strukket */
+    /* Sikrer at billedet ikke bliver strukket */
 
     object-fit: contain;
 
-    /* Gør overgange smooth ved hover */
+    /* Gør hover-effekten mere smooth */
 
     transition: 0.3s ease;
 }
@@ -210,13 +209,12 @@ linear-gradient(
 
 #product-image:hover {
 
- /* Gør højtaleren en smule større,
-når brugeren holder musen over billedet */
+ /* Mikrointeraktion der gør produktet en smule mere levende */
     transform: scale(1.03);
 }
 
 
-/* Produktinformation */
+/* Tekstområde med produktinformation */
 
 .product-info {
 
@@ -226,7 +224,7 @@ når brugeren holder musen over billedet */
 }
 
 
-/* Produktoverskrifter */
+/* Overskrifter i produktsektionen */
 
 .product-info h2 {
 
@@ -243,7 +241,7 @@ når brugeren holder musen over billedet */
 }
 
 
-/* Produkttekst */
+/* Produktbeskrivelse */
 
 .product-info p {
 
@@ -253,7 +251,7 @@ når brugeren holder musen over billedet */
 }
 
 
-/* Pris */
+/* Pris på produktet */
 
 .product-price {
 
@@ -265,7 +263,7 @@ når brugeren holder musen over billedet */
 }
 
 
-/* Vandrette linjer */
+/* Vandrette linjer der opdeler produktinformationen */
 
 hr {
 
@@ -279,7 +277,7 @@ hr {
 }
 
 
-/* Farvenavn */
+/* Tekst der viser den valgte farve */
 
 .color-name {
 
@@ -291,7 +289,7 @@ hr {
 }
 
 
-/* Farvevalg */
+/* Layout for farvevælgeren */
 
 .color-options {
 
@@ -305,7 +303,7 @@ hr {
 }
 
 
-/* Farvecirkler */
+/* Klikbare farvecirkler som bruges til at skifte produktfarve */
 
 .color {
 
@@ -322,7 +320,7 @@ hr {
 }
 
 
-/* Farver */
+/* Individuelle farver til farvecirklerne */
 
 .dusty {
     background-color: #E8C2CA;
@@ -341,7 +339,7 @@ hr {
 }
 
 
-/* Aktiv farvecirkel */
+/* Viser visuelt hvilken farve brugeren har valgt */
 
 .active-color {
 
@@ -349,7 +347,7 @@ hr {
 }
 
 
-/* CTA-knap */
+/* Primær call-to-action knap */
 
 .cta-button {
 
@@ -375,7 +373,7 @@ hr {
 }
 
 
-/* Hover på CTA */
+/* Hover-effekt giver brugeren visuel feedback ved interaktion */
 
 .cta-button:hover {
     opacity: 0.5;
@@ -383,7 +381,7 @@ hr {
 
 
 
-/* Produktfordele */
+/* Sektion med produktets vigtigste fordele */
 
 #features {
 
@@ -395,7 +393,7 @@ hr {
 
     gap: 80px;
 
-    /* Gør sektionen højere */
+    /* Giver sektionen mere luft og ro i layoutet */
 
     min-height: 700px;
 
@@ -404,7 +402,7 @@ hr {
     background-color: #FCFAF8;
 }
 
-/* Feature cards */
+/* Kort med hver produktfordel */
 
 .feature {
 
@@ -435,7 +433,7 @@ hr {
 }
 
 
-/* Gradient divider */
+/* Blød overgang mellem produktfordele og Trustpilot-sektion */
 
 .gradient-divider {
 
@@ -451,11 +449,11 @@ hr {
 }
 
 
-/* Trustpilot sektion */
+/* Trustpilot-sektion der skaber troværdighed */
 
 #trustpilot {
 
-    /* Rykker Trustpilot helt ned */
+    /* Giver sektionen mere luft øverst */
 
     padding-top: 200px;
 
@@ -469,7 +467,7 @@ hr {
     text-align: center;
 }
 
-/* Trustpilot logo */
+/* Layout til Trustpilot-logo */
 
 .trustpilot-logo {
 
@@ -485,7 +483,7 @@ hr {
 }
 
 
-/* Trustpilot stjerne */
+/* Trustpilot stjerneikon */
 
 .trustpilot-logo img {
 
@@ -503,7 +501,7 @@ hr {
 }
 
 
-/* Trustpilot rating */
+/* Layout til Trustpilot-rating */
 
 .trustpilot-rating {
 
@@ -519,7 +517,7 @@ hr {
 }
 
 
-/* Trustpilot stjerner */
+/* Billede med Trustpilot-stjerner */
 
 .trustpilot-rating img {
 
@@ -541,7 +539,7 @@ hr {
 }
 
 
-/* Trustpilot tekst */
+/* Trustpilot brødtekst */
 
 #trustpilot p {
 
@@ -549,7 +547,7 @@ hr {
 }
 
 
-/* Social Connect */
+/* Sektion der præsenterer app-funktionen Social Connect */
 
 #social-connect {
 
@@ -565,7 +563,7 @@ hr {
 }
 
 
-/* Social content */
+/* Tekstindhold i Social Connect-sektionen */
 
 .social-content {
 
@@ -589,7 +587,7 @@ hr {
 }
 
 
-/* Social button */
+/* Knap til Social Connect */
 
 .social-button {
 
@@ -613,21 +611,21 @@ hr {
 }
 
 
-/* Hover på social button */
+/* Hover-effekt på Social Connect-knappen */
 
 .social-button:hover {
     opacity: 0.5;
 }
 
 
-/* Download apps */
+/* App Store og Google Play billede */
 
 .download-apps {
     width: 180px;
 }
 
 
-/* Telefon billede */
+/* Produktbillede af telefon med appen */
 
 .phone-image {
 
@@ -639,7 +637,7 @@ hr {
 }
 
 
-/* Community sektion */
+/* Stemningssektion med baggrundsbillede der understøtter brandidentiteten */
 
 #community {
 
@@ -663,7 +661,7 @@ hr {
 }
 
 
-/* Community overskrift */
+/* Overskrift i stemningssektionen */
 
 #community h2 {
 
@@ -678,7 +676,9 @@ hr {
     text-shadow:
     0 2px 10px rgba(0,0,0,0.4);
 }
-/* Final CTA */
+
+
+/* Afsluttende call-to-action der opfordrer brugeren til køb */
 
 #final-cta {
 
@@ -690,7 +690,7 @@ hr {
 }
 
 
-/* Overskrift */
+/* Overskrift i final CTA-sektionen */
 
 #final-cta h2 {
 
@@ -706,7 +706,7 @@ hr {
 }
 
 
-/* CTA benefits */
+/* Layout til købsmæssige fordele */
 
 .cta-benefits {
 
@@ -720,7 +720,7 @@ hr {
 }
 
 
-/* Tekst under ikoner */
+/* Tekst og ikoner under CTA-overskriften */
 
 .cta-benefits p {
 
@@ -736,7 +736,7 @@ hr {
 }
 
 
-/* Ikoner */
+/* Ikoner til fordele */
 
 .cta-benefits img {
 
@@ -744,7 +744,7 @@ hr {
 }
 
 
-/* Final button */
+/* Primær købsknap i final CTA */
 
 .final-button {
 
@@ -752,7 +752,7 @@ hr {
 
     padding: 24px 120px;
 
-    /* Mørk knap giver mere kontrast */
+    /* Mørk knap skaber kontrast til den lyse baggrund */
 
     background-color: #3F3532;
 
@@ -772,7 +772,7 @@ hr {
 }
 
 
-/* Hover på final button */
+/* Hover-effekt giver knappen mere liv ved interaktion */
 
 .final-button:hover {
 
@@ -782,7 +782,7 @@ hr {
 }
 
 
-/* Final pris */
+/* Pris i final CTA-sektionen */
 
 .final-price {
 
@@ -796,7 +796,7 @@ hr {
 }
 
 
-/* Footer */
+/* Footer med nyhedsbrev, app-links og sociale medier */
 
 #footer {
 
@@ -806,7 +806,7 @@ hr {
 }
 
 
-/* Footer overskrift */
+/* Footerens hovedoverskrift */
 
 #footer h2 {
 
@@ -816,7 +816,7 @@ hr {
 }
 
 
-/* Footer layout */
+/* Flexbox-layout til footerens tre kolonner */
 
 .footer-content {
 
@@ -833,14 +833,14 @@ hr {
 }
 
 
-/* Footer undertitler */
+/* Undertitler i footer */
 
 .footer-content h3 {
     margin-bottom: 25px;
 }
 
 
-/* Footer button */
+/* Tilmeldingsknap i footer */
 
 .footer-button {
 
@@ -868,14 +868,14 @@ hr {
 }
 
 
-/* Hover på footer button */
+/* Hover-effekt på tilmeldingsknappen */
 
 .footer-button:hover {
     opacity: 0.5;
 }
 
 
-/* Newsletter tekst */
+/* Lille tekst om nyhedsbrev og samtykke */
 
 .newsletter-text {
 
@@ -885,7 +885,7 @@ hr {
 }
 
 
-/* Footer ikoner */
+/* Layout til app-links og sociale medier i footer */
 
 .footer-app p,
 .footer-social p {
@@ -909,7 +909,7 @@ hr {
 }
 
 
-/* Footer bund */
+/* Nederste del af footer med juridiske links */
 
 .footer-bottom {
 
@@ -927,7 +927,7 @@ hr {
 }
 
 
-/* E-mail felt */
+/* Inputfelt til e-mail i nyhedsbrevet */
 
 #email {
 
