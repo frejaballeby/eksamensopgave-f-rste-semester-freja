@@ -74,5 +74,5 @@ Koden bruges til farvevælgeren i produktsektionen. Først henter den den farvek
 
 Når brugeren klikker på en farve, bliver højtalerens billede og farvenavn opdateret på siden. På den måde reagerer siden på brugerens valg og giver en mere interaktiv oplevelse.
 
-Jeg har valgt denne løsning, fordi den gør koden mere overskuelig og nemmere at vedligeholde. Samtidig gør den det muligt for brugeren hurtigt at se de forskellige farvevarianter af LUMINA One.<img width="1480" height="4474" alt="image" src="https://github.com/user-attachments/assets/2dbe64a6-e1ca-42b0-96bc-2e4fb1fad57c" />
+Jeg har valgt denne løsning, fordi den gør koden mere overskuelig og nemmere at vedligeholde. Samtidig gør den det muligt for brugeren hurtigt at se de forskellige farvevarianter af LUMINA One.
 
