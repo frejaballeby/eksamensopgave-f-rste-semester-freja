@@ -6,26 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LUMINA One</title>
 
-    <!-- Link til CSS -->
+    <!-- Link til ekstern CSS-fil -->
     <link rel="stylesheet" href="css/style.css">
 
-    <!-- Implementering af typografien 'Inter' -->
-     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <!-- Import af Google Font: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 
-     <!-- Favicon -->
-      <link rel="icon" type="image/png" href="img/fav-icon.png">
-
+    <!-- Favicon i browserfanen -->
+    <link rel="icon" type="image/png" href="img/fav-icon.png">
 </head>
 
 <body>
 
-    <!-- Navigation øverst på siden -->
+    <!-- Header med navigation øverst på siden -->
     <header>
         <nav>
 
-<!-- Logo -->
+            <!-- LUMINA Logo -->
             <img src="img/lumina-logo.png" alt="LUMINA Logo">
 
+            <!-- Navigationslinks til sidens vigtigste områder -->
             <div class="nav-links">
                 <a href="#">Højtalere</a>
                 <a href="#">Tilkøb</a>
@@ -33,40 +33,37 @@
                 <a href="#">Kontakt</a>
             </div>
 
-
-    <!-- Ikoner til navbar -->
-
-    <img src="img/navbar-icons.png" alt="Brugerikon og kurv">
+            <!-- Ikoner til brugerfunktioner som profil, søgning og kurv -->
+            <img src="img/navbar-icons.png" alt="Brugerikon og kurv">
         </nav>
     </header>
 
     <main>
 
-       <section id="hero">
+        <!-- Hero-sektion som introducerer produktet visuelt og tekstligt -->
+        <section id="hero">
 
-    <p class="intro-tekst">
-        DESIGNET TIL DINE ØJEBLIKKE
-    </p>
+            <p class="intro-tekst">
+                DESIGNET TIL DINE ØJEBLIKKE
+            </p>
 
-    <h2>Mød den nye</h2>
+            <h2>Mød den nye</h2>
 
-    <h2>
-        <strong>LUMINA</strong> One
-    </h2>
+            <h2>
+                <strong>LUMINA</strong> One
+            </h2>
 
-  
+            <p>
+                Mere end bare lyd. Skabt til de øjeblikke, du har lyst
+                til at blive i lidt længere.
+            </p>
 
-    <p>
-        Mere end bare lyd. Skabt til de øjeblikke, du har lyst
-        til at blive i lidt længere.
-    </p>
+        </section>
 
-</section>
-
-        <!-- Produktvisning med farvevalg -->
+        <!-- Produktsektion med interaktivt farvevalg -->
         <section id="product">
 
-            <!-- Højtalerbillede med gradient-baggrund -->
+            <!-- Figure bruges til produktbilledet, fordi billedet er centralt for sektionen -->
             <figure class="speaker-wrapper">
 
                 <img
@@ -76,7 +73,7 @@
 
             </figure>
 
-            <!-- Produktinformation -->
+            <!-- Article samler produktets tekst, pris og handlinger -->
             <article class="product-info">
 
                 <h2>Find din favorit</h2>
@@ -93,9 +90,10 @@
 
                 <hr>
 
-               <p id="color-name" class="color-name">Moonlight White</p>
+                <!-- Farvenavnet ændres dynamisk med JavaScript -->
+                <p id="color-name" class="color-name">Moonlight White</p>
 
-                <!-- Farvevalg -->
+                <!-- Knapper til valg af produktfarve -->
                 <div class="color-options">
 
                     <button id="moonlight-btn" class="color moonlight active-color"></button>
@@ -106,20 +104,18 @@
 
                     <button id="sage-btn" class="color sage"></button>
 
-                   
-
                 </div>
 
                 <hr>
 
-                <!-- CTA-knap -->
+                <!-- Primær CTA-knap i produktsektionen -->
                 <button class="cta-button">Læg i kurv</button>
 
             </article>
 
         </section>
 
-        <!-- Produktfordele -->
+        <!-- Sektion med produktets vigtigste fordele/specifikationer -->
         <section id="features">
 
             <article class="feature">
@@ -187,7 +183,7 @@
 
         </section>
 
-        <!-- Trustpilot sektion -->
+        <!-- Trustpilot-sektion der skaber troværdighed og social proof -->
         <section id="trustpilot">
 
             <div class="trustpilot-logo">
@@ -212,17 +208,14 @@
 
             <h3>Fremragende</h3>
 
-         
-
             <p>Mere end 1800+ kunder har allerede valgt LUMINA</p>
 
         </section>
 
-             <!-- Grøn gradient mellem Produktfordele-sektion og Trustpilot-sektion -->
+        <!-- Dekorativ overgang mellem sektioner -->
         <section class="gradient-divider"></section>
 
-        
-        <!-- Social Connect sektion -->
+        <!-- Social Connect-sektion der præsenterer app-funktionen -->
         <section id="social-connect">
 
             <article class="social-content">
@@ -252,7 +245,7 @@
 
         </section>
 
-        <!-- Stemningssektion -->
+        <!-- Stemningssektion der understøtter brandets univers -->
         <section id="community">
 
             <h2>Lyd der forbinder os.</h2>
@@ -260,7 +253,7 @@
 
         </section>
 
-        <!-- Final CTA Sektion -->
+        <!-- Afsluttende CTA-sektion med købsargumenter -->
         <section id="final-cta">
 
             <h2>Klar til at opleve LUMINA?</h2>
@@ -290,15 +283,15 @@
 
         </section>
 
-        <!-- Footer -->
+        <!-- Footer med nyhedsbrev, app-links og sociale medier -->
         <footer id="footer">
 
             <h2>Lad nye lydoplevelser<br>finde vej til dig.</h2>
 
-            <!-- Footer indhold -->
+            <!-- Samlet footer-indhold opdelt i tre kolonner -->
             <section class="footer-content">
 
-                <!-- Nyhedsbrev -->
+                <!-- Nyhedsbrev med e-mail input -->
                 <article>
 
                     <h3>Bliv en del af LUMINA</h3>
@@ -320,7 +313,7 @@
 
                 </article>
 
-                <!-- App -->
+                <!-- Links til LUMINA app -->
                 <article class="footer-app">
 
                     <h3>LUMINA App</h3>
@@ -363,7 +356,7 @@
 
             </section>
 
-            <!-- Footer bundtekst -->
+            <!-- Footerens nederste område med copyright og juridiske links -->
             <section class="footer-bottom">
 
                 <p>© 2026 LUMINA Audio</p>
@@ -380,6 +373,7 @@
 
     </main>
 
+    <!-- Link til JavaScript-fil -->
     <script src="js/script.js"></script>
 
 </body>
